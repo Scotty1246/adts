@@ -92,4 +92,73 @@ void List::remove(int k)
 	}
 	
 	//Implementations of missing operations
+
+void List::getelement(int k)
+{
+	Node* iPtr = frontPtr;
+
+	if(k==1)
+	{
+		cout << iPtr -> data << endl;
+	}
+	else
+	{
+		for(int i=1; i < k-1; i++)
+		{
+			iPtr = iPtr -> link;
+		}
 	
+		cout << iPtr -> data << endl;
+	}
+}
+
+void empty()
+{
+	if(size() == 0)
+	{
+		cout << "The list is empty" << endl;
+	}
+}
+
+void List::display()
+{
+	
+	if(size() == 0)
+	{
+		cout << "The list is empty" << endl;
+	}
+	else
+	{
+		Node* iPtr = frontPtr;
+		for(int i=1;i <= size(); i++)
+		{
+			Node* iPtr = frontPtr;
+		
+			if(i == 1)
+			{
+				cout << iPtr -> data << endl;
+			}
+			else
+			{
+				for(int j=1; j < i-1; j++)
+				{
+					iPtr = Iptr -> link;
+				}
+			
+				cout << iPtr -> data << endl;
+			}
+		}
+	}
+}
+
+int clear(int k)
+{
+	if(size() == 0)
+	{
+		cout << "The stack is already empty" << endl;
+	}
+	else
+	{
+		Node* delPtr
+	}
+}
