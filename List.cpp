@@ -151,14 +151,11 @@ void List::display()
 	}
 }
 
-int clear(int k)
+void clear()
 {
-	if(size() == 0)
+	while(size() != 0)
 	{
-		cout << "The stack is already empty" << endl;
+	   remove(1);
 	}
-	else
-	{
-		Node* delPtr
-	}
+
 }
