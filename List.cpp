@@ -103,7 +103,7 @@ void List::getelement(int k)
 	}
 	else
 	{
-		for(int i=1; i < k-1; i++)
+		for(int i=1; i < k; i++)
 		{
 			iPtr = iPtr -> link;
 		}
@@ -112,7 +112,7 @@ void List::getelement(int k)
 	}
 }
 
-void empty()
+void List::empty()
 {
 	if(size() == 0)
 	{
@@ -122,7 +122,6 @@ void empty()
 
 void List::display()
 {
-	
 	if(size() == 0)
 	{
 		cout << "The list is empty" << endl;
@@ -140,9 +139,9 @@ void List::display()
 			}
 			else
 			{
-				for(int j=1; j < i-1; j++)
+				for(int j=1; j < i; j++)
 				{
-					iPtr = Iptr -> link;
+					iPtr = iPtr -> link;
 				}
 			
 				cout << iPtr -> data << endl;
@@ -151,7 +150,7 @@ void List::display()
 	}
 }
 
-void clear()
+void List::clear()
 {
 	while(size() != 0)
 	{

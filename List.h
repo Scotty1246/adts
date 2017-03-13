@@ -21,7 +21,7 @@ class List //begin List definition
      
      
      /** MISSING OPERATIONS */
-     void clear(int k);
+     void clear();
      void display();
      void empty();
      void getelement(int k);
