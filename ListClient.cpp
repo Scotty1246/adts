@@ -7,7 +7,7 @@ int main()
 {
 
  List L1, L2, Listname;
- int lnum, cnum, val, L_pos;
+ int lnum, cnum, val, L_pos, getnum;
  char choice, schoice;
  //Do some stuff with L1, L2, ...
  // ...
@@ -56,7 +56,8 @@ int main()
 
 		case 4: cout << "Enter the position of the value you want to get" << endl;
 			cin >> L_pos;
-			Listname.getelement(L_pos); 
+			getnum = Listname.getelement(L_pos); 
+			cout << getnum << endl;
 			break;
 
 		case 5: Listname.clear();

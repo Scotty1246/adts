@@ -93,13 +93,13 @@ void List::remove(int k)
 	
 	//Implementations of missing operations
 
-void List::getelement(int k)
+int List::getelement(int k)
 {
 	Node* iPtr = frontPtr;
 
 	if(k==1)
 	{
-		cout << iPtr -> data << endl;
+		return iPtr -> data;
 	}
 	else
 	{
@@ -108,7 +108,7 @@ void List::getelement(int k)
 			iPtr = iPtr -> link;
 		}
 	
-		cout << iPtr -> data << endl;
+		return iPtr -> data;
 	}
 }
 

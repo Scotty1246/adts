@@ -24,7 +24,7 @@ class List //begin List definition
      void clear();
      void display();
      void empty();
-     void getelement(int k);
+     int getelement(int k);
      //... fill in ....
 
 };//end List definition
